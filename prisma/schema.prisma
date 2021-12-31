@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://253588:shinosuquex123@mysql-remix-jokes-app.alwaysdata.net:3306/remix-jokes-app_db"
+  url      = env("DATABASE_URL")
 }
 
 model User {
