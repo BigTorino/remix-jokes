@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:C:\\Users\\victo\\Desktop\\Hamal\\remix\\remix-jokes\\app\\routes\\jokes\\index.tsx?browser"],
-  "sourcesContent": ["export * from \"C:\\\\Users\\\\victo\\\\Desktop\\\\Hamal\\\\remix\\\\remix-jokes\\\\app\\\\routes\\\\jokes\\\\index.tsx\";"],
-  "mappings": ";;;;;AAAA;",
-  "names": []
-}

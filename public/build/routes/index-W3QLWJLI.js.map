@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:C:\\Users\\victo\\Desktop\\Hamal\\remix\\remix-jokes\\app\\routes\\index.tsx?browser", "../../../app/routes/index.tsx"],
-  "sourcesContent": ["export { default } from \"C:\\\\Users\\\\victo\\\\Desktop\\\\Hamal\\\\remix\\\\remix-jokes\\\\app\\\\routes\\\\index.tsx\";", "\r\nexport default function AdminIndex() {\r\n    return(\r\n        <div>\r\n            Hello Index Route\r\n        </div>\r\n    )\r\n}"],
-  "mappings": ";;;;;;AAAA;;;ACAA;AACe,sBAAsB;AACjC,SACI,oCAAC,OAAD,MAAK;AAAA;",
-  "names": []
-}
