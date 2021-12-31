@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/joke.tsx"],
+  "sourcesContent": ["import { Link, Form } from \"remix\";\r\nimport type { Joke } from \"@prisma/client\";\r\n\r\nexport function JokeDisplay({\r\n  joke,\r\n  isOwner,\r\n  canDelete = true\r\n}: {\r\n  joke: Pick<Joke, \"content\" | \"name\">;\r\n  isOwner: boolean;\r\n  canDelete?: boolean;\r\n}) {\r\n  return (\r\n    <div>\r\n      <p>Here's your hilarious joke:</p>\r\n      <p>{joke.content}</p>\r\n      <Link to=\".\">{joke.name} Permalink</Link>\r\n      {isOwner ? (\r\n        <Form method=\"post\">\r\n          <input\r\n            type=\"hidden\"\r\n            name=\"_method\"\r\n            value=\"delete\"\r\n          />\r\n          <button\r\n            type=\"submit\"\r\n            className=\"button\"\r\n            disabled={!canDelete}\r\n          >\r\n            Delete\r\n          </button>\r\n        </Form>\r\n      ) : null}\r\n    </div>\r\n  );\r\n}"],
+  "mappings": ";;;;;;;;;;AAAA;AAGO,qBAAqB;AAAA,EAC1B;AAAA,EACA;AAAA,EACA,YAAY;AAAA,GAKX;AACD,SACE,oCAAC,OAAD,MACE,oCAAC,KAAD,MAAG,gCACH,oCAAC,KAAD,MAAI,KAAK,UACT,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAK,KAAK,MAAK,eACvB,UACC,oCAAC,MAAD;AAAA,IAAM,QAAO;AAAA,KACX,oCAAC,SAAD;AAAA,IACE,MAAK;AAAA,IACL,MAAK;AAAA,IACL,OAAM;AAAA,MAER,oCAAC,UAAD;AAAA,IACE,MAAK;AAAA,IACL,WAAU;AAAA,IACV,UAAU,CAAC;AAAA,KACZ,aAID;AAAA;",
+  "names": []
+}
